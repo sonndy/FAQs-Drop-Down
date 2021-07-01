@@ -50,19 +50,3 @@ window.addEventListener("DOMContentLoaded", () => {
 
     
 })
-
-// 
-// icons.forEach((icon) => {
-//     icon.addEventListener("click", (e) => {
-//     let iconSibling = icon.parentElement.nextElementSibling;
-//     let question = icon.parentElement;
-//     console.log(question);
-//     iconSibling.classList.toggle("shown")
-//     
-
-
-
-// })
-
-
-// })
