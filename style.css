@@ -15,15 +15,21 @@ body {
 
 .main {
     width: min(90%, 60rem);
-    padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 40px;
+    padding-left: 5%;
     margin-top: 130px;
+    /* padding-left: 20px; */
     background-color: white;
     margin-inline: auto;
     border-radius: 20px;
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    /* background-color: blue; */
+    border-top-left-radius: 10px;
 }
 
 h1 {
@@ -33,10 +39,18 @@ h1 {
     color: hsl(238, 29%, 16%);
 }
 
+.line {
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
 .question {
     display: flex;
     /* margin-bottom: 5px; */
     border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin-top: 10px;
     /* padding-bottom: 5px; */
     justify-content: space-between;
 
@@ -46,6 +60,7 @@ h1 {
     color: orange;
     cursor: pointer;
 }
+
 
 
 .answer {
@@ -60,6 +75,7 @@ h1 {
 
 .down-icon {
     margin-top: 8px;
+    cursor:  add;
     
 }
 
@@ -81,6 +97,10 @@ h1 {
     width: 200px;
 } */
 
+.show-answer {
+    display: block;
+}
+
 .women-icon {
     margin-top: -105px;
     display: block;
@@ -100,32 +120,21 @@ h1 {
     margin-right: auto;
     margin-bottom: 30px;
 }
-
+/* 
 .images {
     display: inline-block;
-    /* background-color: red; */
+    background-color: green;
     width: min(100%, 80rem);
     margin: 0;
-    /* background-color: red; */
-}
+} */
 
 .margin-left {
     display: block;
     margin-left: 500px;
 }
 
-/* .center {
-    width: min(375px);
-} */
 
-.shown {
-    display: block;
-}
 
-.no-border-bold {
-    border: none;
-    font-weight: bold;
-}
 
 .new-transparent {
     display: none;
@@ -135,25 +144,12 @@ h1 {
     display: none;
 }
 
+
 .rotate {
     transform: rotate(180deg) scaleX(-1);
 }
 
-.bold-bottom {
-    border-bottom: 1px solid hsl(240, 5%, 91%);
-}
 
-.none-bold {
-    font-weight: 400;
-}
-
-.line {
-    font-weight: bold;
-}
-
-.square {
-    display: none;
-}
 
 p {
     padding-top: 5px;
@@ -163,95 +159,84 @@ p {
     margin-top: 20px;
 }
 
-@media (min-width :1440px) {
-    .mobile {
+
+
+.square {
+    display: none;
+}
+
+.new-question {
+    font-weight: bold;
+    color: black;
+    border: none;
+}
+
+@media (min-width: 900px) {
+    .women-icon {
         display: none;
     }
-
-    /* .center {
-        display: flex;
-    } */
-
-    .desktop {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .question {
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-    }
-
-    .main {
-        height: 510px;
-        padding-right: 10px;
-        overflow: hidden;
-        font-size: 16px;
+    .new-women-icon {
+        display: block;
+        position: relative;
+        right: 80px;
+        top: 80px;
+        z-index: 100;
     }
 
     .new-transparent {
         display: block;
         position: relative;
-        bottom: 660px;
-        left: -680px;
+        bottom: 650px;
+        right: 580px;
+        z-index: 50;
     }
 
-    .new-women-icon {
+    .square {
+        position: absolute;
         display: block;
+        left: -100px;
+        top: 220px;
+        z-index: 1000;
+    }
+
+    .transparent {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        width: auto;
+        height: auto;
         position: relative;
-        top: 70px;
-        left: -185px;
-        z-index: 100;
-        
+        text-align: center;
+        /* background-color: green; */
+    
     }
 
-    .attribution {
-        margin-top: 20px;
-    }
-
-    .center {
-        width: 300px;
-        /* background-color: aqua; */
-        margin-right: 60;
-        /* margin-right: 100px; */
-        
+    .main { 
+        padding-left: 0;
+        padding-bottom: 0;
     }
 
     .content {
-        width: 500px;
-        height: fit-content;
-        margin-top: 20px;
-        padding: 20px;
-        padding-right: 75px;
-        display: inline-block;
+        width: 400px;
+        margin-top: 60px;
         text-align: left;
-        /* background-color: red; */
     }
 
     h1 {
         text-align: left;
-        margin-top: 25px;
     }
 
-    p {
-        text-align: left;
+
+    .background-image {
         /* background-color: red; */
-        line-height: 24px;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        margin-right: 50px;
+        overflow: hidden;
     }
-
-    svg.down-icon {
-        margin-left: 20px;
-        
-    }
-
-    .square {
-        display: block;
-        position: absolute;
-        z-index: 1000;
-        top: 340px;
-        left: 190px;
-        /* right: 700px; */
-    }
-
 
 }
