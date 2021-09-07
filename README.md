@@ -11,14 +11,6 @@
 
 ## Overview
 
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the component depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Hide/Show the answer to a question when the question is clicked
-
 ### Screenshot
 
 ![](images/desktopDesign.png)
@@ -33,18 +25,15 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Javascript DOM manipulation
+- Javascript Event Listener
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned th
 
 ## Author
 
