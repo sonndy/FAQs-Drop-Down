@@ -27,6 +27,7 @@
 - Semantic HTML5 markup
 - Flexbox
 - Mobile-first workflow
+- CSS positioning
 - Javascript DOM manipulation
 - Javascript Event Listener
 
