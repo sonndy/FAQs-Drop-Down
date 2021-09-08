@@ -34,7 +34,7 @@
 
 ### What I learned
 
-I learned th
+Instead of traversing the DOM trying to look for what elements the user clicked, I learn the importance of responding to the users click in order to run a block of code base on the element that is being clicked. Furthermore, I learn how to add specific style to hide or shown elements by toggling new CSS classes.
 
 ## Author
 
